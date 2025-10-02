@@ -1,0 +1,44 @@
+<div class="admin-container">
+  <header class="admin-header">
+    <h1>🏀 Panel Administrativo</h1>
+    <div class="user-info">
+      <span>Bienvenido, {{ currentUser?.nombre }}</span>
+      <button (click)="logout()" class="btn-logout">Cerrar Sesión</button>
+      <button (click)="goToTablero()" class="btn-tablero">Ir al Tablero</button>
+    </div>
+  </header>
+
+  <nav class="admin-nav">
+    <div class="nav-section">
+      <h3>Gestión del Sistema</h3>
+      <ul>
+        <li><a routerLink="/admin/equipos">🏀 Gestión de Equipos</a></li>
+        <li><a routerLink="/admin/jugadores">👥 Gestión de Jugadores</a></li>
+        <li><a routerLink="/admin/partidos">📅 Gestión de Partidos</a></li>
+        <li><a routerLink="/admin/usuarios">👤 Gestión de Usuarios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="admin-main">
+    <div class="welcome-message">
+      <h2>Bienvenido al Sistema Administrativo</h2>
+      <p>Selecciona una opción del menú para comenzar a gestionar el sistema de baloncesto.</p>
+      
+      <div class="stats-cards">
+        <div class="stat-card">
+          <h3>Equipos Registrados</h3>
+          <span class="stat-number">0</span>
+        </div>
+        <div class="stat-card">
+          <h3>Jugadores Activos</h3>
+          <span class="stat-number">0</span>
+        </div>
+        <div class="stat-card">
+          <h3>Partidos Programados</h3>
+          <span class="stat-number">0</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

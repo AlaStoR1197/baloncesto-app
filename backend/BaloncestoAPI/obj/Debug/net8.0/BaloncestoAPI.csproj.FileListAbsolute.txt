@@ -134,3 +134,11 @@ C:\Users\asbie\Desktop\baloncesto-app\backend\baloncestoapi\bin\Debug\net8.0\tr\
 C:\Users\asbie\Desktop\baloncesto-app\backend\baloncestoapi\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\asbie\Desktop\baloncesto-app\backend\baloncestoapi\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\asbie\Desktop\baloncesto-app\backend\baloncestoapi\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\asbie\Desktop\baloncesto-app\backend\BaloncestoAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

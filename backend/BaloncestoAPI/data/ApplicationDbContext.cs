@@ -10,6 +10,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Equipo> Equipos { get; set; }
     public DbSet<Jugador> Jugadores { get; set; }
     public DbSet<Partido> Partidos { get; set; }
+    public DbSet<Usuario> Usuarios { get; set; } // ← ESTA LÍNEA ES CRÍTICA
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -32,5 +33,11 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Equipo>().ToTable("equipos");
         modelBuilder.Entity<Jugador>().ToTable("jugadores");
         modelBuilder.Entity<Partido>().ToTable("partidos");
+        modelBuilder.Entity<Usuario>().ToTable("usuarios"); // ← Y ESTA TAMBIÉN
+        
+        // Configurar índice único para username
+        modelBuilder.Entity<Usuario>()
+            .HasIndex(u => u.Username)
+            .IsUnique();
     }
 }
