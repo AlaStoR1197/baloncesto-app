@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qiThXysF1iMrIsIwr1GXvdR60ksIKMCpB5ub1vM+VEY=",
+  "Source": "BaloncestoAPI",
+  "BasePath": "_content/BaloncestoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
