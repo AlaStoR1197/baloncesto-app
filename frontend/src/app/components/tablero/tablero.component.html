@@ -1,0 +1,76 @@
+<div class="tablero-container">
+  <!-- Encabezado -->
+  <div class="encabezado">
+    <h1>🏀 Tablero de Baloncesto</h1>
+    <div class="cuarto-tiempo">
+      <div class="cuarto">
+        <span>Cuarto: {{ partido.cuartoActual }}/4</span>
+        <div class="controles-cuarto">
+          <button (click)="cuartoAnterior()" [disabled]="partido.cuartoActual <= 1">◀</button>
+          <button (click)="siguienteCuarto()" [disabled]="partido.cuartoActual >= 4">▶</button>
+        </div>
+      </div>
+      <div class="tiempo">
+        <span class="temporizador">{{ partido.tiempoRestante }}</span>
+        <div class="controles-tiempo">
+          <button (click)="iniciarTemporizador()" [disabled]="partido.tiempoCorriendo">▶ Iniciar</button>
+          <button (click)="pausarTemporizador()" [disabled]="!partido.tiempoCorriendo">⏸ Pausar</button>
+          <button (click)="reiniciarTemporizador()">⏹ Reiniciar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marcador Principal -->
+  <div class="marcador-principal">
+    <div class="equipo local">
+      <h2>{{ partido.equipoLocal.nombre }}</h2>
+      <div class="puntos">{{ partido.puntosLocal }}</div>
+      <div class="faltas">Faltas: {{ partido.faltasLocal }}</div>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="equipo visitante">
+      <h2>{{ partido.equipoVisitante.nombre }}</h2>
+      <div class="puntos">{{ partido.puntosVisitante }}</div>
+      <div class="faltas">Faltas: {{ partido.faltasVisitante }}</div>
+    </div>
+  </div>
+
+  <!-- Controles de Puntos -->
+  <div class="controles-puntos">
+    <div class="controles-equipo">
+      <h3>{{ partido.equipoLocal.nombre }}</h3>
+      <div class="botones-puntos">
+        <button (click)="sumarPuntos('local', 1)" class="btn-punto btn-1">+1</button>
+        <button (click)="sumarPuntos('local', 2)" class="btn-punto btn-2">+2</button>
+        <button (click)="sumarPuntos('local', 3)" class="btn-punto btn-3">+3</button>
+        <button (click)="restarPuntos('local', 1)" class="btn-correccion">-1</button>
+      </div>
+      <div class="controles-faltas">
+        <button (click)="sumarFalta('local')">+ Falta</button>
+        <button (click)="restarFalta('local')">- Falta</button>
+      </div>
+    </div>
+
+    <div class="controles-equipo">
+      <h3>{{ partido.equipoVisitante.nombre }}</h3>
+      <div class="botones-puntos">
+        <button (click)="sumarPuntos('visitante', 1)" class="btn-punto btn-1">+1</button>
+        <button (click)="sumarPuntos('visitante', 2)" class="btn-punto btn-2">+2</button>
+        <button (click)="sumarPuntos('visitante', 3)" class="btn-punto btn-3">+3</button>
+        <button (click)="restarPuntos('visitante', 1)" class="btn-correccion">-1</button>
+      </div>
+      <div class="controles-faltas">
+        <button (click)="sumarFalta('visitante')">+ Falta</button>
+        <button (click)="restarFalta('visitante')">- Falta</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Control General -->
+  <div class="controles-generales">
+    <button (click)="reiniciarPartido()" class="btn-reiniciar">🔄 Reiniciar Partido</button>
+  </div>
+</div>

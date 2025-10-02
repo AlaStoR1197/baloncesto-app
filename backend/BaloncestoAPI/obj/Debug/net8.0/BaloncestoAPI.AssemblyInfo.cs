@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaloncestoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af56c327996ab24c9caaaa5f7521ff7140f34445")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca5d1e749a7c824226770eb97377d2f494869add")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaloncestoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaloncestoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
